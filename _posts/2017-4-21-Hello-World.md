@@ -7,6 +7,12 @@ title: Hmm, what should the title be...?
 
 ## Quick Aside: The Ethics of Scraping
 
+# Where can I see the data?!?!
+
+I thought you'd never ask! Right now the data is two tables, one for users and one for boulders.
+- We're working with **BIG DATA** here, and I needed a petabyte scale data warehouse that was fault tolerant and offered network isolation. You can download a [SQLite](http://sqlite.org/index.html) dump of the data [here](https://github.com/andylamb/8a-data/raw/master/output.sql).
+- You can also get CSV files for the [users](https://github.com/andylamb/8a-data/raw/master/users.csv) and [boulders](https://github.com/andylamb/8a-data/raw/master/boulders.csv) tables.
+
 # What Shape are Climbers?
 
 Climbers have long been interested in what sort of body can be dragged up the steepest cliffs and most heinous edges. It's fascinating that body types as different as [Ashima](https://www.instagram.com/ashimashiraishi) (5', ~90lbs) and [Jan Hojer](https://vimeo.com/66473915) (6'2'', ~170lbs) can both excel at the sport. So what does the data on 8a say? Let's dig in!
@@ -23,6 +29,8 @@ To get a high-level picture of the data, we now turn to our good friend from Int
 ## Height
 
 ![height boxplot](../images/2017-4-21-Hello-World/boxplot_heights.png)
+
+**TODO: Figure out how to make the tables more stylish.**
 
 | |All Climbers | 8a Climbers | 8b Climbers|
 |---|-------------|-------------|------------|
@@ -49,4 +57,3 @@ Median | 68.0 | 68.0 | 68.0 |
 Median | 21.80 | 21.30 | 21.30 |
 25th Percentile | 20.53 | 20.31 | 19.88 |
 75th Percentile | 23.29 | 22.53 | 22.53 |
-
