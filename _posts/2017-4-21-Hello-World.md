@@ -20,8 +20,33 @@ I considered three different populations:
 ### Box-and-Whisker Plots
 To get a high-level picture of the data, we now turn to our good friend from Intro. Statistics, the box-and-whisker plot. The "box" ranges from the 25th percentile of the data to the 75th, with a line for the median. The "whiskers" show the lowest and highest datums within the interquartile range of the 25th and 75th percentiles, respectively. Check out [this video](https://youtu.be/b2C9I8HuCe4) for a more in-depth explanation.
 
-## All Climbers
+## Height
 
-## 8a Climbers
+![height boxplot](../images/2017-4-21-Hello-World/boxplot_heights.png)
 
-## 8b Climbers
+| |All Climbers | 8a Climbers | 8b Climbers|
+|---|-------------|-------------|------------|
+Median | 177.0 | 177.0 | 178.0 |
+25th Percentile | 172.0 | 171.0 | 172.0 |
+75th Percentile | 182.0 | 180.0 | 180.0 |
+
+## Weight
+
+![weight boxplot](../images/2017-4-21-Hello-World/boxplot_weights.png)
+
+| |All Climbers | 8a Climbers | 8b Climbers|
+|---|-------------|-------------|------------|
+Median | 68.0 | 68.0 | 68.0 |
+25th Percentile | 63.0 | 63.0 | 63.0 |
+75th Percentile | 73.0 | 73.0 | 68.0 |
+
+## BMI
+
+![height boxplot](../images/2017-4-21-Hello-World/boxplot_bmis.png)
+
+| |All Climbers | 8a Climbers | 8b Climbers|
+|---|-------------|-------------|------------|
+Median | 21.80 | 21.30 | 21.30 |
+25th Percentile | 20.53 | 20.31 | 19.88 |
+75th Percentile | 23.29 | 22.53 | 22.53 |
+
