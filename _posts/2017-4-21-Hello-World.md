@@ -57,3 +57,5 @@ Median | 68.0 | 68.0 | 68.0 |
 Median | 21.80 | 21.30 | 21.30 |
 25th Percentile | 20.53 | 20.31 | 19.88 |
 75th Percentile | 23.29 | 22.53 | 22.53 |
+
+# Where should I live?
