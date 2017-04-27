@@ -5,6 +5,16 @@ title: Hmm, what should the title be...?
 
 # Introduction
 
+Spend some time at any climbing gym, sport crag, or online forum, and you'll quickly learn that the climbing tribe has no shortage of conventional wisdom on the best shoes to wear, fingerboard regimes to follow, or even German [skin-drying creams](http://eveningsends.com/review-antihydral/) to dab on one's fingers. I use the term "conventional wisdom" not to be dismissive, but as my best attempt to describe the accumulation of unstructured knowledge that climbers share and synthesize. Climbing is an incredibly complicated pursuit, and it is my intuition that performance will not be as easily dissected by the scientific method as it would be for more quantifiable and controlled sports, say running or powerlifting.
+
+I was thinking of ways I could leverage my technical skills and combine them with my knowledge and curiosity for climbing. I came up with the idea of using the data from [8a.nu](https://www.8a.nu/) to get a unique angle on the landscape of climbing. The core function of "8a" is as a log for a climber's ascents. It serves as a forum to track your progress, jot down notes on a climb, burn off your friends, and get 15 minutes of fame on the sidebar after a hard ascent. I hoped that by exploring a dataset of bios and climbs I could answer questions about climbing performance and get a bird's eye view of the community as a whole. For example:
+- What is the relationship between height and weight, and climbing performance?
+- Where are the most popular places for climbers to live?
+- What are the most popular climbs?
+- How balanced are the "route pyramids" of most climbers? That is, do most people actually do a significant number of routes at a certain grade before progressing to the next?
+
+I wrote up a [Python](https://www.python.org/) script to gather the data on the climbers and ascents available on 8a. Here I present some basic analysis I did. This is by no means meant to be exhaustive, or the final say; indeed, my hope is just to give a sample of what is possible and present the datasets to others. In the spirit of collaboration and reproducability, I would love nothing more than for other people to dissect my results and be inspired by the dataset to answer questions of their own!
+
 ## Quick Aside: The Ethics of Scraping
 
 # Where can I see the data?!?!
