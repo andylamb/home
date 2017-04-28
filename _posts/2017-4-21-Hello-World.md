@@ -33,7 +33,7 @@ I considered three different populations:
 - The subset of climbers that had at least 10 ascents 8b or harder. This gropu had 97 climbers.
 
 ### Box-and-Whisker Plots
-To get a high-level picture of the data, we now turn to our good friend from Intro. Statistics, the box-and-whisker plot. The "box" ranges from the 25th percentile of the data to the 75th, with a line for the median. The "whiskers" show the lowest and highest datums within the interquartile range of the 25th and 75th percentiles, respectively. Check out [this video](https://youtu.be/b2C9I8HuCe4) for a more in-depth explanation.
+To get a high-level picture of the data, we now turn to our good friend from Intro. Statistics, the box-and-whisker plot. The "box" ranges from the 25th percentile of the data to the 75th (we call the height of this box the "interquartile range"), with a lines for the median and mean. The "whiskers" show the lowest and highest datums within the 1.5 times the interquartile range of the 25th and 75th percentiles, respectively. Check out [this video](https://youtu.be/b2C9I8HuCe4) for a more in-depth explanation.
 
 ## Height
 
@@ -46,6 +46,12 @@ To get a high-level picture of the data, we now turn to our good friend from Int
     <a href="https://plot.ly/~andylamb/71/?share_key=7EoAlr6Y2XzFHnG8NbmmpE" target="_blank" title="Heights" style="display: block; text-align: center;"><img src="https://plot.ly/~andylamb/71.png?share_key=7EoAlr6Y2XzFHnG8NbmmpE" alt="Heights" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
     <script data-plotly="andylamb:71" sharekey-plotly="7EoAlr6Y2XzFHnG8NbmmpE" src="https://plot.ly/embed.js" async></script>
 </div>
+
+There's a lot going on here! Let's step through the box-and-whisker plot to make sure we're on the same page. If you mouse over one of the groups the plot should display a bunch of numbers. The top and bottom ones point to the maximum and minimum points in the dataset. So for "All Climbers" this would be 235 and 120. Next, we have numbers for the whiskers, 197 and 157 in this example. Remember that the placement of the whiskers are based on the interquartile range, and the important part is that any points outside the whiskers are considered outliers. On this plot those points are displayed as dots. The top and bottom of the box are the 75th and 25th percentiles, respectively, which are 182 and 172. Finally, the solid line inside the box is the median (178) and the dashed line is the mean (176.4).
+
+Ok, so what can we say about the data? First, there do seem to be a lot of outliers. This is tricky, because these are likely "measurement errors", i.e. accounts that lie about their heights. We'll need to remember this in our analysis, so it's nice that the plot gives us a heads up. What about the medians? Mousing over the plots, we can see that the values are 178 for "All Climbers" and "8b Climbers" and 177 for "8a Climbers" - so it looks like all the groups are roughly the same. For the means, the values are 176.4, 176.0, and 176.9, so all the groups are within a centimeter of each other. Similarly, the 25th and 75th percentiles are all within a centimeter or two of each other.
+
+Going off the plots and summary stat
 
 **TODO: Figure out how to make the tables more stylish.**
 
