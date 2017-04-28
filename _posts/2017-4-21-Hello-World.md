@@ -67,4 +67,17 @@ Median | 21.80 | 21.30 | 21.30 |
 25th Percentile | 20.53 | 20.31 | 19.88 |
 75th Percentile | 23.29 | 22.53 | 22.53 |
 
-# Where should I live?
+# Let's do Some Significance Testing!
+
+So far we've used box-and-whisker plots and histograms to get a feel for how the different populations look. But just staring at the plots, it's difficult to tell how different the populations are; that is, we want a way to answer the question of whether all climbers, 8a climbers, and 8b climbers are really do have different heights, weights, and BMIs. 
+
+Here we turn to [Analysis of Variance (ANOVA)](https://en.wikipedia.org/wiki/Analysis_of_variance), which tests whether the means of multiple groups are significantly different. Imagine there are some "true" distributions of heights (or weights or BMIs) out there for all climbers, 8a climbers, and 8b climbers, and the data we got from 8a are samples from these true distributions. Of course we can't observe these true distributions, only the samples, but we want to infer some knowledge about the true distributions, in this case their means. We can use ANOVA for this task: the input is the samples we got from 8a, and the test computes an F-value **READ UP / EXPLAIN THIS MORE** and [p-value](https://en.wikipedia.org/wiki/P-value). The p-value is the probability that if the (null hypothesis)[https://en.wikipedia.org/wiki/Null_hypothesis] (in our case all three of the population means being equal) is true, we would observe the samples. If the p-value is less than a chosen significance level (0.05 is a common choice), we would say that the results are (statistically significant)[https://en.wikipedia.org/wiki/Statistical_significance]. For example, if the results for BMI are statistically significant, it means that our observed BMI data is unlikely if the means the true BMI distributions were all the same.
+
+Stats is pretty fun stuff - let's get cracking on these tests!
+
+## ANOVA
+
+| |Height | Weight | BMI|
+|---|-------------|-------------|------------|
+F-value | 0.637715 | 5.615863 | 6.507667 |
+p-value | 0.52853  | 0.003656 | 0.001501 |
