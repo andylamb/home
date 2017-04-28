@@ -37,6 +37,11 @@ To get a high-level picture of the data, we now turn to our good friend from Int
 
 ## Height
 
+<div>
+    <a href="https://plot.ly/~andylamb/43/?share_key=iEOO7UeAtZ1MdpZJ3nY6Du" target="_blank" title="BMI Histogram" style="display: block; text-align: center;"><img src="https://plot.ly/~andylamb/43.png?share_key=iEOO7UeAtZ1MdpZJ3nY6Du" alt="BMI Histogram" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
+    <script data-plotly="andylamb:43" sharekey-plotly="iEOO7UeAtZ1MdpZJ3nY6Du" src="https://plot.ly/embed.js" async></script>
+</div>
+
 ![height boxplot](../images/2017-4-21-Hello-World/boxplot_heights.png)
 
 **TODO: Figure out how to make the tables more stylish.**
