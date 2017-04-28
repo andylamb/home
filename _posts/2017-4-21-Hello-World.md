@@ -15,8 +15,6 @@ I was thinking of ways I could leverage my technical skills and combine them wit
 
 I wrote up a [Python](https://www.python.org/) script to gather the data on the climbers and ascents available on 8a. Here I present some basic analysis I did. This is by no means meant to be exhaustive, or the final say; indeed, my hope is just to give a sample of what is possible and present the datasets to others. In the spirit of collaboration and reproducability, I would love nothing more than for other people to dissect my results and be inspired by the dataset to answer questions of their own!
 
-## Quick Aside: The Ethics of Scraping
-
 # Where can I see the data?!?!
 
 I thought you'd never ask! Right now the data is two tables, one for users and one for boulders.
