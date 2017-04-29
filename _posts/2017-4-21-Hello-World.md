@@ -51,15 +51,7 @@ There's a lot going on here! Let's step through the box-and-whisker plot to make
 
 Ok, so what can we say about the data? First, there do seem to be a lot of outliers. This is tricky, because these are likely "measurement errors", i.e. accounts that lie about their heights. We'll need to remember this in our analysis, so it's nice that the plot gives us a heads up. What about the medians? Mousing over the plots, we can see that the values are 178 for "All Climbers" and "8b Climbers" and 177 for "8a Climbers" - so it looks like all the groups are roughly the same. For the means, the values are 176.4, 176.0, and 176.9, so all the groups are within a centimeter of each other. Similarly, the 25th and 75th percentiles are all within a centimeter or two of each other.
 
-Going off the plots and summary stat
-
-**TODO: Figure out how to make the tables more stylish.**
-
-| |All Climbers | 8a Climbers | 8b Climbers|
-|---|-------------|-------------|------------|
-Median | 177.0 | 177.0 | 178.0 |
-25th Percentile | 172.0 | 171.0 | 172.0 |
-75th Percentile | 182.0 | 180.0 | 180.0 |
+Going off the plots and summary statistics, it seems like the height distributions of the different groups aren't drastically different.
 
 ## Weight
 
