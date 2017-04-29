@@ -48,7 +48,7 @@ To get a high-level picture of the data, we now turn to our good friend from Int
 </div>
 
 <div>
-    <a href="https://plot.ly/~andylamb/83/?share_key=jww4wndQv3UrVly5ycrHAT" target="_blank" title="Heights Table" style="display: block; text-align: center;"><img src="https://plot.ly/~andylamb/83.png?share_key=jww4wndQv3UrVly5ycrHAT" alt="Heights Table" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
+    <a href="https://plot.ly/~andylamb/83/?share_key=jww4wndQv3UrVly5ycrHAT" target="_blank" title="Heights Table" style="display: block; text-align: center;"><img src="https://plot.ly/~andylamb/83.png?share_key=jww4wndQv3UrVly5ycrHAT" alt="Heights Table" style="max-width: 100%;width: 600px;"  width="600" height="300" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
     <script data-plotly="andylamb:83" sharekey-plotly="jww4wndQv3UrVly5ycrHAT" src="https://plot.ly/embed.js" async></script>
 </div>
 
