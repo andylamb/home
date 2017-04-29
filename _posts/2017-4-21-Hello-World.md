@@ -51,6 +51,8 @@ There's a lot going on here! Let's step through the box-and-whisker plot to make
 
 Ok, so what can we say about the data? First, there do seem to be a lot of outliers. This is tricky, because these are likely "measurement errors", i.e. accounts that lie about their heights. We'll need to remember this in our analysis, so it's nice that the plot gives us a heads up. What about the medians? Mousing over the plots, we can see that the values are 178 for "All Climbers" and "8b Climbers" and 177 for "8a Climbers" - so it looks like all the groups are roughly the same. For the means, the values are 176.4, 176.0, and 176.9, so all the groups are within a centimeter of each other. Similarly, the 25th and 75th percentiles are all within a centimeter or two of each other.
 
+Let's take a quick look at the histogram as well. The x-axis is weight and the y-axis is percentage, with a bin size of 3, and when you mouse over a column the number displayed is the center of the bin. For example, the second column from the left shows 164, so we can see that an 8b climber has a 2% chance of being between 162.5 and 165.5cm. The y-axis is normalized, i.e. show probabilities rather than raw counts, because the size of the different groups are different. Histograms are another nice way to get an exploratory view of the data. We can see that the heights of the three groups all seem to be distributed similarly, and approximately look approximately normal.
+
 Going off the plots and summary statistics, it seems like the height distributions of the different groups aren't drastically different.
 
 ## Weight
