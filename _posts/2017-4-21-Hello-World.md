@@ -67,11 +67,9 @@ Going off the plots and summary statistics, it seems like the height distributio
     <script data-plotly="andylamb:75" sharekey-plotly="KfYR0XXmkxc7KeKCQaSVBB" src="https://plot.ly/embed.js" async></script>
 </div>
 
-| |All Climbers | 8a Climbers | 8b Climbers|
-|---|-------------|-------------|------------|
-Median | 68.0 | 68.0 | 68.0 |
-25th Percentile | 63.0 | 63.0 | 63.0 |
-75th Percentile | 73.0 | 73.0 | 68.0 |
+So what's going on with the weight distributions? Mousing over the plots, it looks like the 25th percentiles and medians are the same for all groups. The 75th percentile is lower for "8b Climbers" than for the other two groups (68 vs. 73kg) and the mean for "All Climbers" is about 1.3kg higher than for the other two groups.
+
+The histogram can give us a little more information. If we look at the 57, 62, and 67kg bins (the bin size is 5kg, so these would be 54.5 - 59.5kg, etc.), 8b climbers are the group with the highest probability, then 8a climbers, then all climbers. The order is reversed for the 77, 82, and 52 bins. So what do we make of this? Well it does seem that the 8b and 8a distributions are skewed lighter than the all climbers distribution. The 52 bin is a bit of an anomaly - looking at the box-and-whisker plot, we can see that there are lower outliers for the all climbers and 8a climbers groups.
 
 ## BMI
 
