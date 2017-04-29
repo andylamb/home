@@ -47,6 +47,11 @@ To get a high-level picture of the data, we now turn to our good friend from Int
     <script data-plotly="andylamb:71" sharekey-plotly="7EoAlr6Y2XzFHnG8NbmmpE" src="https://plot.ly/embed.js" async></script>
 </div>
 
+<div>
+    <a href="https://plot.ly/~andylamb/83/?share_key=jww4wndQv3UrVly5ycrHAT" target="_blank" title="Heights Table" style="display: block; text-align: center;"><img src="https://plot.ly/~andylamb/83.png?share_key=jww4wndQv3UrVly5ycrHAT" alt="Heights Table" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
+    <script data-plotly="andylamb:83" sharekey-plotly="jww4wndQv3UrVly5ycrHAT" src="https://plot.ly/embed.js" async></script>
+</div>
+
 There's a lot going on here! Let's step through the box-and-whisker plot to make sure we're on the same page. If you mouse over one of the groups the plot should display a bunch of numbers. The top and bottom ones point to the maximum and minimum points in the dataset. So for "All Climbers" this would be 235 and 120. Next, we have numbers for the whiskers, 197 and 157 in this example. Remember that the placement of the whiskers are based on the interquartile range, and the important part is that any points outside the whiskers are considered outliers. On this plot those points are displayed as dots. The top and bottom of the box are the 75th and 25th percentiles, respectively, which are 182 and 172. Finally, the solid line inside the box is the median (178) and the dashed line is the mean (176.4).
 
 Ok, so what can we say about the data? First, there do seem to be a lot of outliers. This is tricky, because these are likely "measurement errors", i.e. accounts that lie about their heights. We'll need to remember this in our analysis, so it's nice that the plot gives us a heads up. What about the medians? Mousing over the plots, we can see that the values are 178 for "All Climbers" and "8b Climbers" and 177 for "8a Climbers" - so it looks like all the groups are roughly the same. For the means, the values are 176.4, 176.0, and 176.9, so all the groups are within a centimeter of each other. Similarly, the 25th and 75th percentiles are all within a centimeter or two of each other.
@@ -67,6 +72,11 @@ Going off the plots and summary statistics, it seems like the height distributio
     <script data-plotly="andylamb:75" sharekey-plotly="KfYR0XXmkxc7KeKCQaSVBB" src="https://plot.ly/embed.js" async></script>
 </div>
 
+<div>
+    <a href="https://plot.ly/~andylamb/85/?share_key=AMe9eMSXcuk6G8HpOGJNOw" target="_blank" title="Weights Table" style="display: block; text-align: center;"><img src="https://plot.ly/~andylamb/85.png?share_key=AMe9eMSXcuk6G8HpOGJNOw" alt="Weights Table" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
+    <script data-plotly="andylamb:85" sharekey-plotly="AMe9eMSXcuk6G8HpOGJNOw" src="https://plot.ly/embed.js" async></script>
+</div>
+
 So what's going on with the weight distributions? Mousing over the plots, it looks like the 25th percentiles and medians are the same for all groups. The 75th percentile is lower for "8b Climbers" than for the other two groups (68 vs. 73kg) and the mean for "All Climbers" is about 1.3kg higher than for the other two groups.
 
 The histogram can give us a little more information. If we look at the 57, 62, and 67kg bins (the bin size is 5kg, so these would be 54.5 - 59.5kg, etc.), 8b climbers are the group with the highest probability, then 8a climbers, then all climbers. The order is reversed for the 77, 82, and 52 bins. So what do we make of this? Well it does seem that the 8b and 8a distributions are skewed lighter than the all climbers distribution. The 52 bin is a bit of an anomaly - looking at the box-and-whisker plot, we can see that there are lower outliers for the all climbers and 8a climbers groups.
@@ -83,11 +93,10 @@ The histogram can give us a little more information. If we look at the 57, 62, a
     <script data-plotly="andylamb:69" sharekey-plotly="qOtl8VPos9Dcc4aHFcZWuU" src="https://plot.ly/embed.js" async></script>
 </div>
 
-| |All Climbers | 8a Climbers | 8b Climbers|
-|---|-------------|-------------|------------|
-Median | 21.80 | 21.30 | 21.30 |
-25th Percentile | 20.53 | 20.31 | 19.88 |
-75th Percentile | 23.29 | 22.53 | 22.53 |
+<div>
+    <a href="https://plot.ly/~andylamb/89/?share_key=rILe2OBQ0CPnv1UFnC4KMb" target="_blank" title="BMIs Table" style="display: block; text-align: center;"><img src="https://plot.ly/~andylamb/89.png?share_key=rILe2OBQ0CPnv1UFnC4KMb" alt="BMIs Table" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
+    <script data-plotly="andylamb:89" sharekey-plotly="rILe2OBQ0CPnv1UFnC4KMb" src="https://plot.ly/embed.js" async></script>
+</div>
 
 # Let's do Some Significance Testing!
 
