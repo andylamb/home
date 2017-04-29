@@ -98,6 +98,24 @@ The histogram can give us a little more information. If we look at the 57, 62, a
     <script data-plotly="andylamb:89" sharekey-plotly="rILe2OBQ0CPnv1UFnC4KMb" src="https://plot.ly/embed.js" async></script>
 </div>
 
+<table>
+	<tr>
+	<th></th>
+		<th>All Climbers</th>
+		<th>8a Climbers</th>
+	</tr>
+	<tr>
+		<td>Mean</td>
+		<td>1.5</td>
+		<td>2.5</td>
+	</tr>
+	<tr>
+		<td>Median</td>
+		<td>4.5</td>
+		<td>3.5</td>
+	</tr>
+</table>
+
 # Let's do Some Significance Testing!
 
 So far we've used box-and-whisker plots and histograms to get a feel for how the different populations look. But just staring at the plots, it's difficult to tell how different the populations are; that is, we want a way to answer the question of whether all climbers, 8a climbers, and 8b climbers are really do have different heights, weights, and BMIs. 
