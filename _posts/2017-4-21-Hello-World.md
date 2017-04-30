@@ -98,21 +98,21 @@ The histogram can give us a little more information. If we look at the 57, 62, a
     <script data-plotly="andylamb:89" sharekey-plotly="rILe2OBQ0CPnv1UFnC4KMb" src="https://plot.ly/embed.js" async></script>
 </div>
 
-<table>
+<table style="width:100%">
 	<tr>
 	<th></th>
-		<th>All Climbers</th>
-		<th>8a Climbers</th>
+		<th style="border:1px solid #dfe2e5; padding: 6px 13px">All Climbers</th>
+		<th style="border:1px solid #dfe2e5; padding: 6px 13px">8a Climbers</th>
 	</tr>
 	<tr>
-		<td>Mean</td>
-		<td>1.5</td>
-		<td>2.5</td>
+		<td style="border:1px solid #dfe2e5; padding: 6px 13px">Mean</td>
+		<td style="border:1px solid #dfe2e5; padding: 6px 13px">1.5</td>
+		<td style="border:1px solid #dfe2e5; padding: 6px 13px">2.5</td>
 	</tr>
 	<tr>
-		<td>Median</td>
-		<td>4.5</td>
-		<td>3.5</td>
+		<td style="border:1px solid #dfe2e5; padding: 6px 13px">Median</td>
+		<td style="border:1px solid #dfe2e5; padding: 6px 13px">4.5</td>
+		<td style="border:1px solid #dfe2e5; padding: 6px 13px">3.5</td>
 	</tr>
 </table>
 
