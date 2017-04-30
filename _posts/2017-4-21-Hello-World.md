@@ -133,4 +133,20 @@ So what do these statements mean? First, we said that the height distributions f
 
 The really cool thing about a statistical test is that it can help us move beyond the intuition that something looks a bit different. I like to think of it as a computer looking over the thousands of data points for us to make sure we didn't miss anything. Of course, by codifying this analysis in equations we make a set of assumptions that may not hold with exact fidelity to reality, so I like to combine human intuition with mathematical formality and computational power.
 
-# Conclusion
+# Wrapping Things Up
+
+## A few Notes About the Dataset
+
+The dataset I got from 8a can be a bit messy. Here I go through a few things I noticed that could potentially be issues.
+
+### Weights are Bucketed
+
+8a only allows climbers to log their weights in discrete intervals, e.g. 71 - 75kg. For height, climbers are allowed to input any number in cm.
+
+### Outliers
+
+As seen from the box-and-whisker plots, there are a number of "measurement errors", or accounts that do not input a correct height and weight. We attempted to clean these from our analysis; for example, requiring that the "All Climbers" group had logged at least 10 climbs seemed to help reduce the number of bogus accounts. However, there is definitely potential to figure out more ways to clean up the data.
+
+## What's Next?
+
+This analysis is just a start, and in the spirit of scientific advancement I'd love for other people to dissect my methods and figure out new ways to use this data to advance our collective climbing knowledge! I wanted to understand a rough relationship between body composition and bouldering achievement, and it seems that there is a relatively small correlation for weight and BMI. The data can be a bit messy, which is all the more reason for more inquiring minds to delve in. As Linus Tovalds, creator of the Linux operating system, said, "Given enough eyeballs, all bugs are shallow". I'm excited to see what you find!
