@@ -114,6 +114,10 @@ th {
   font-weight: 600;
 }
 
+th, td {
+  padding: 6px 13px;
+}
+
 // Fixes images in popup boxes from Google Translate
 .gmnoprint img {
   max-width: none;
