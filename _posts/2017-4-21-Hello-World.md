@@ -98,6 +98,10 @@ The histogram can give us a little more information. If we look at the 57, 62, a
     <script data-plotly="andylamb:89" sharekey-plotly="rILe2OBQ0CPnv1UFnC4KMb" src="https://plot.ly/embed.js" async></script>
 </div>
 
+BMI is defined as the climber's weight (in kg) divided by the square of their height (in meters squared). BMI is a way to classify body types, and a common categorization under 18.5 (underweight), 18.5 to 25 (normal weight), 25 to 30 (overweight), over 30 (obese). It is very rough metric - Michael Jordan was famously classified as overweight during his athletic prime. Since we are asking what the relationship between body type and climbing is, I would argue that it is still interesting to consider; LeBron James is freakishly athletic, but at 6'8" and 250lbs it seems doubtful he would be able to climb 8b. From a pragmatic perspective, our dataset doesn't contain more detailed body composition metrics.
+
+So what are the charts showing? 
+
 <table style="width:100%">
 	<tr>
 	<th></th>
