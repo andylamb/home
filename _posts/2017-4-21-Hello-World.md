@@ -124,3 +124,13 @@ Stats is pretty fun stuff - let's get cracking on these tests!
 |---|-------------|-------------|------------|
 F-value | 0.637715 | 5.615863 | 6.507667 |
 p-value | 0.52853  | 0.003656 | 0.001501 |
+
+Now let's dissect the results of our hypothesis test. Remember that our null hypothesis is that the distributions (for height, weight, and BMI) between all three groups have the same mean. The F-value is the ratio of variance between groups to variance within a group, and the p-value is the probability of observing our data if the null hypothesis is true. For height, the F-value is low - there isn't much variance between groups - and the p-value is high: there is a 0.52 probability of observing our data if the height distributions all have the same mean. For height, it looks like the distributions between groups do have the same mean.
+
+The story is different for the tests of weight and BMI. On both of these tests, there is a lot of variance between groups relative to the variance within groups (the F-value is high), and the p-values are low, so there is a low chance of observing our data if the means of the "true" distributions for the three groups were the same. In fact, our p-values for weight and BMI are lower than the chosen significance level (we chose 0.05) so we can reject the null hypothesis.
+
+So what do these statements mean? First, we said that the height distributions for all climbers, 8a climbers, and 8b climbers have the same mean. Next, we said that the distributions for weight and BMI do not have the same mean. Note that this does not give information about how large the difference in their means are, whether two of the groups might have the same mean, or whether other statistics such as percentiles might be the same. This basically jives with what we were seeing when we looked at the charts and descriptive statistics: it looked like the distributions were slightly different. 
+
+The really cool thing about a statistical test is that it can help us move beyond the intuition that something looks a bit different. I like to think of it as a computer looking over the thousands of data points for us to make sure we didn't miss anything. Of course, by codifying this analysis in equations we make a set of assumptions that may not hold with exact fidelity to reality, so I like to combine human intuition with mathematical formality and computational power.
+
+# Conclusion
