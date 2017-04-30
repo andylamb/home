@@ -100,31 +100,21 @@ The histogram can give us a little more information. If we look at the 57, 62, a
 
 BMI is defined as the climber's weight (in kg) divided by the square of their height (in meters squared). BMI is a way to classify body types, and a common categorization under 18.5 (underweight), 18.5 to 25 (normal weight), 25 to 30 (overweight), over 30 (obese). It is very rough metric - Michael Jordan was famously classified as overweight during his athletic prime. Since we are asking what the relationship between body type and climbing is, I would argue that it is still interesting to consider; LeBron James is freakishly athletic, but at 6'8" and 250lbs it seems doubtful he would be able to climb 8b. From a pragmatic perspective, our dataset doesn't contain more detailed body composition metrics.
 
-So what are the charts showing?
+So what are the charts showing? It looks like the stats are very slightly lower for the 8a and 8b groups than for all climbers. On median (21.8 vs. 21.3), (21.9, 21.5 for 8a climbers, and 21.3 for 8b climbers), 25th percentile (20.5, 20.3 for 8a climbers, and 19.9 for 8b climbers), and 75th percentile (23.0 vs. 22.5) the BMIs drop around half a point as we move to the more elite groups. Looking at the 19.5, 20.5, 21.5, and 22.5 bins (bin size is 1) of the histogram is interesting: on the 19.5 bin 8b climbers are overrepresented, on the 20.5 and 21.5 bins 8a climbers have the highest percentage, and on the 22.5 bin 8b climbers are underrepresented. This lets us understand our box-and-whisker plot a bit more.
 
-<table style="width:100%">
-	<tr>
-	<th></th>
-		<th style="border:1px solid #dfe2e5; padding: 6px 13px">All Climbers</th>
-		<th style="border:1px solid #dfe2e5; padding: 6px 13px">8a Climbers</th>
-	</tr>
-	<tr>
-		<td style="border:1px solid #dfe2e5; padding: 6px 13px">Mean</td>
-		<td style="border:1px solid #dfe2e5; padding: 6px 13px">1.5</td>
-		<td style="border:1px solid #dfe2e5; padding: 6px 13px">2.5</td>
-	</tr>
-	<tr>
-		<td style="border:1px solid #dfe2e5; padding: 6px 13px">Median</td>
-		<td style="border:1px solid #dfe2e5; padding: 6px 13px">4.5</td>
-		<td style="border:1px solid #dfe2e5; padding: 6px 13px">3.5</td>
-	</tr>
-</table>
+It is also worth thinking about what 1 unit of BMI means. Say we have a climber that is 178cm. Then, in order to change their BMI by 1 unit of kg per meters squared, they would need to change their weight by 1.78 squared, or about 3.17kg. For example, if they were 69kg their BMI would be approximately 21.8 and if they were 65.8kg their BMI would be approximately 20.8.
+
+So overall, the three groups have pretty similar distributions of BMIs, with 8b climbers and 8a climbers tending to be slightly lower. All three groups fall in the middle of the "normal weight" category, but as stated before, these classifications are often considered questionable.
 
 # Let's do Some Significance Testing!
 
 So far we've used box-and-whisker plots and histograms to get a feel for how the different populations look. But just staring at the plots, it's difficult to tell how different the populations are; that is, we want a way to answer the question of whether all climbers, 8a climbers, and 8b climbers are really do have different heights, weights, and BMIs.
 
-Here we turn to [Analysis of Variance (ANOVA)](https://en.wikipedia.org/wiki/Analysis_of_variance), which tests whether the means of multiple groups are significantly different. Imagine there are some "true" distributions of heights (or weights or BMIs) out there for all climbers, 8a climbers, and 8b climbers, and the data we got from 8a are samples from these true distributions. Of course we can't observe these true distributions, only the samples, but we want to infer some knowledge about the true distributions, in this case their means. We can use ANOVA for this task: the input is the samples we got from 8a, and the test computes an F-value **READ UP / EXPLAIN THIS MORE** and [p-value](https://en.wikipedia.org/wiki/P-value). The p-value is the probability that if the [null hypothesis](https://en.wikipedia.org/wiki/Null_hypothesis) (in our case all three of the population means being equal) is true, we would observe the samples. If the p-value is less than a chosen significance level (0.05 is a common choice), we would say that the results are [statistically significant](https://en.wikipedia.org/wiki/Statistical_significance). For example, if the results for BMI are statistically significant, it means that our observed BMI data is unlikely if the means the true BMI distributions were all the same.
+Here we turn to [Analysis of Variance (ANOVA)](https://en.wikipedia.org/wiki/Analysis_of_variance), which tests whether the means of multiple groups are significantly different. Imagine there are some "true" distributions of heights (or weights or BMIs) out there for all climbers, 8a climbers, and 8b climbers, and the data we got from 8a are samples from these true distributions. Of course we can't observe these true distributions, only the samples, but we want to infer some knowledge about the true distributions, in this case their means. We can use ANOVA for this task: the input is the samples we got from 8a, and the test computes an F-value and [p-value](https://en.wikipedia.org/wiki/P-value). 
+
+The intuition for the F-value is that there is some variance between groups and within groups, and we are interested in the ratio of these variances (which is where the name "Analysis of Variance" comes from). Say we find that there is much more variance between groups than within groups; in this case, the F-value will be higher and it seems more likely that the groups are fundamentally distributed differently. On the other hand, if we find there is high variance within groups and not much variance between groups, than it is less likely the groups are actually distributed differently. Once we have the F-value, we can use the p-value as a way to formalize this intuition.
+
+The p-value is the probability that if the [null hypothesis](https://en.wikipedia.org/wiki/Null_hypothesis) (in our case all three of the population means being equal) is true, we would observe the samples. If the p-value is less than a chosen significance level (0.05 is a common choice), we would say that the results are [statistically significant](https://en.wikipedia.org/wiki/Statistical_significance). For example, if the results for BMI are statistically significant, it means that our observed BMI data is unlikely if the means the true BMI distributions were all the same.
 
 Stats is pretty fun stuff - let's get cracking on these tests!
 
