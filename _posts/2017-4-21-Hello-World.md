@@ -223,23 +223,23 @@ Stats is pretty fun stuff - let's get cracking on these tests!
   <thead>
     <tr>
       <th>&nbsp;</th>
-      <th style="color:#1F77B4">Height</th>
-      <th style="color:#FF7F0E">Weight</th>
-      <th style="color:#2CA02C">BMI</th>
+      <th>Height</th>
+      <th>Weight</th>
+      <th>BMI</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>F-value</td>
-      <td style="color:#1F77B4">0.637715</td>
-      <td style="color:#FF7F0E">5.615863</td>
-      <td style="color:#2CA02C">6.507667</td>
+      <td>0.637715</td>
+      <td>5.615863</td>
+      <td>6.507667</td>
     </tr>
     <tr>
       <td>p-value</td>
-      <td style="color:#1F77B4">0.52853</td>
-      <td style="color:#FF7F0E">0.003656</td>
-      <td style="color:#2CA02C">0.001501</td>
+      <td>0.52853</td>
+      <td>0.003656</td>
+      <td>0.001501</td>
     </tr>
   </tbody>
 </table>
