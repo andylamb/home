@@ -47,10 +47,42 @@ To get a high-level picture of the data, we now turn to our good friend from Int
     <script data-plotly="andylamb:71" sharekey-plotly="7EoAlr6Y2XzFHnG8NbmmpE" src="https://plot.ly/embed.js" async></script>
 </div>
 
-<div>
-    <a href="https://plot.ly/~andylamb/83/?share_key=jww4wndQv3UrVly5ycrHAT" target="_blank" title="Heights Table" style="display: block; text-align: center;"><img src="https://plot.ly/~andylamb/83.png?share_key=jww4wndQv3UrVly5ycrHAT" alt="Heights Table" style="max-width: 100%;width: 600px;"  width="600" height="300" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
-    <script data-plotly="andylamb:83" sharekey-plotly="jww4wndQv3UrVly5ycrHAT" src="https://plot.ly/embed.js" async></script>
-</div>
+<table>
+  <thead>
+    <tr>
+      <th>&nbsp;</th>
+      <th style="color:#1F77B4">All Climbers</th>
+      <th style="color:#FF7F0E">8a Climbers</th>
+      <th style="color:#2CA02C">8b Climbers</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Mean</td>
+      <td style="color:#1F77B4">176.43</td>
+      <td style="color:#FF7F0E">176.05</td>
+      <td style="color:#2CA02C">176.94</td>
+    </tr>
+    <tr>
+      <td>Median</td>
+      <td style="color:#1F77B4">178.0</td>
+      <td style="color:#FF7F0E">177.0</td>
+      <td style="color:#2CA02C">178.0</td>
+    </tr>
+    <tr>
+      <td>25th Percentile</td>
+      <td style="color:#1F77B4">172.0</td>
+      <td style="color:#FF7F0E">171.0</td>
+      <td style="color:#2CA02C">172.0</td>
+    </tr>
+    <tr>
+      <td>75th Percentile</td>
+      <td style="color:#1F77B4">182.0</td>
+      <td style="color:#FF7F0E">181.0</td>
+      <td style="color:#2CA02C">180.0</td>
+    </tr>
+  </tbody>
+</table>
 
 There's a lot going on here! Let's step through the box-and-whisker plot to make sure we're on the same page. If you mouse over one of the groups the plot should display a bunch of numbers. The top and bottom ones point to the maximum and minimum points in the dataset. So for "All Climbers" this would be 235 and 120. Next, we have numbers for the whiskers, 197 and 157 in this example. Remember that the placement of the whiskers are based on the interquartile range, and the important part is that any points outside the whiskers are considered outliers. On this plot those points are displayed as dots. The top and bottom of the box are the 75th and 25th percentiles, respectively, which are 182 and 172. Finally, the solid line inside the box is the median (178) and the dashed line is the mean (176.4).
 
@@ -72,10 +104,44 @@ Going off the plots and summary statistics, it seems like the height distributio
     <script data-plotly="andylamb:75" sharekey-plotly="KfYR0XXmkxc7KeKCQaSVBB" src="https://plot.ly/embed.js" async></script>
 </div>
 
-<div>
-    <a href="https://plot.ly/~andylamb/85/?share_key=AMe9eMSXcuk6G8HpOGJNOw" target="_blank" title="Weights Table" style="display: block; text-align: center;"><img src="https://plot.ly/~andylamb/85.png?share_key=AMe9eMSXcuk6G8HpOGJNOw" alt="Weights Table" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
-    <script data-plotly="andylamb:85" sharekey-plotly="AMe9eMSXcuk6G8HpOGJNOw" src="https://plot.ly/embed.js" async></script>
-</div>
+<table>
+  <thead>
+    <tr>
+      <th>&nbsp;</th>
+      <th style="color:#1F77B4">All Climbers</th>
+      <th style="color:#FF7F0E">8a Climbers</th>
+      <th style="color:#2CA02C">8b Climbers</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Mean</td>
+      <td style="color:#1F77B4">68.21</td>
+      <td style="color:#FF7F0E">66.81</td>
+      <td style="color:#2CA02C">66.92</td>
+    </tr>
+    <tr>
+      <td>Median</td>
+      <td style="color:#1F77B4">68.0</td>
+      <td style="color:#FF7F0E">68.0</td>
+      <td style="color:#2CA02C">68.0</td>
+    </tr>
+    <tr>
+      <td>25th Percentile</td>
+      <td style="color:#1F77B4">63.0</td>
+      <td style="color:#FF7F0E">63.0</td>
+      <td style="color:#2CA02C">63.0</td>
+    </tr>
+    <tr>
+      <td>75th Percentile</td>
+      <td style="color:#1F77B4">73.0</td>
+      <td style="color:#FF7F0E">73.0</td>
+      <td style="color:#2CA02C">68.0</td>
+    </tr>
+  </tbody>
+</table>
+
+
 
 So what's going on with the weight distributions? Mousing over the plots, it looks like the 25th percentiles and medians are the same for all groups. The 75th percentile is lower for "8b Climbers" than for the other two groups (68 vs. 73kg) and the mean for "All Climbers" is about 1.3kg higher than for the other two groups.
 
@@ -93,10 +159,43 @@ The histogram can give us a little more information. If we look at the 57, 62, a
     <script data-plotly="andylamb:69" sharekey-plotly="qOtl8VPos9Dcc4aHFcZWuU" src="https://plot.ly/embed.js" async></script>
 </div>
 
-<div>
-    <a href="https://plot.ly/~andylamb/89/?share_key=rILe2OBQ0CPnv1UFnC4KMb" target="_blank" title="BMIs Table" style="display: block; text-align: center;"><img src="https://plot.ly/~andylamb/89.png?share_key=rILe2OBQ0CPnv1UFnC4KMb" alt="BMIs Table" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
-    <script data-plotly="andylamb:89" sharekey-plotly="rILe2OBQ0CPnv1UFnC4KMb" src="https://plot.ly/embed.js" async></script>
-</div>
+<table>
+  <thead>
+    <tr>
+      <th>&nbsp;</th>
+      <th style="color:#1F77B4">All Climbers</th>
+      <th style="color:#FF7F0E">8a Climbers</th>
+      <th style="color:#2CA02C">8b Climbers</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Mean</td>
+      <td style="color:#1F77B4">21.86</td>
+      <td style="color:#FF7F0E">21.52</td>
+      <td style="color:#2CA02C">21.34</td>
+    </tr>
+    <tr>
+      <td>Median</td>
+      <td style="color:#1F77B4">21.8</td>
+      <td style="color:#FF7F0E">21.33</td>
+      <td style="color:#2CA02C">21.3</td>
+    </tr>
+    <tr>
+      <td>25th Percentile</td>
+      <td style="color:#1F77B4">20.53</td>
+      <td style="color:#FF7F0E">20.34</td>
+      <td style="color:#2CA02C">19.88</td>
+    </tr>
+    <tr>
+      <td>75th Percentile</td>
+      <td style="color:#1F77B4">23.04</td>
+      <td style="color:#FF7F0E">22.53</td>
+      <td style="color:#2CA02C">22.53</td>
+    </tr>
+  </tbody>
+</table>
+
 
 BMI is defined as the climber's weight (in kg) divided by the square of their height (in meters squared). BMI is a way to classify body types, and a common categorization under 18.5 (underweight), 18.5 to 25 (normal weight), 25 to 30 (overweight), over 30 (obese). It is very rough metric - Michael Jordan was famously classified as overweight during his athletic prime. Since we are asking what the relationship between body type and climbing is, I would argue that it is still interesting to consider; LeBron James is freakishly athletic, but at 6'8" and 250lbs it seems doubtful he would be able to climb 8b. From a pragmatic perspective, our dataset doesn't contain more detailed body composition metrics.
 
@@ -120,10 +219,30 @@ Stats is pretty fun stuff - let's get cracking on these tests!
 
 ## ANOVA
 
-| |Height | Weight | BMI|
-|---|-------------|-------------|------------|
-F-value | 0.637715 | 5.615863 | 6.507667 |
-p-value | 0.52853  | 0.003656 | 0.001501 |
+<table>
+  <thead>
+    <tr>
+      <th>&nbsp;</th>
+      <th style="color:#1F77B4">Height</th>
+      <th style="color:#FF7F0E">Weight</th>
+      <th style="color:#2CA02C">BMI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>F-value</td>
+      <td style="color:#1F77B4">0.637715</td>
+      <td style="color:#FF7F0E">5.615863</td>
+      <td style="color:#2CA02C">6.507667</td>
+    </tr>
+    <tr>
+      <td>p-value</td>
+      <td style="color:#1F77B4">0.52853</td>
+      <td style="color:#FF7F0E">0.003656</td>
+      <td style="color:#2CA02C">0.001501</td>
+    </tr>
+  </tbody>
+</table>
 
 Now let's dissect the results of our hypothesis test. Remember that our null hypothesis is that the distributions (for height, weight, and BMI) between all three groups have the same mean. The F-value is the ratio of variance between groups to variance within a group, and the p-value is the probability of observing our data if the null hypothesis is true. For height, the F-value is low - there isn't much variance between groups - and the p-value is high: there is a 0.52 probability of observing our data if the height distributions all have the same mean. For height, it looks like the distributions between groups do have the same mean.
 
