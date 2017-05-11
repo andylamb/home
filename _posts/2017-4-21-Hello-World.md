@@ -3,6 +3,9 @@ layout: post
 title: Hmm, what should the title be...?
 ---
 
+* TOC
+{:toc}
+
 # Introduction
 
 Spend some time at any climbing gym, sport crag, or online forum, and you'll quickly learn that the climbing tribe has no shortage of opinions on the best shoes to wear, fingerboard regimes to follow, or [German skin-drying creams](http://eveningsends.com/review-antihydral/) to dab on one's fingers. In addition to the unstructured knowledge that climbers share and synthesize, ideas from sport science have been applied to climbing. For example, the [Rock Climber's Training Manual](https://rockclimberstrainingmanual.com/) is an excellent guide to designing a [periodized](https://www.wikipedia.com/en/Sports_periodization) training plan for climbing.
@@ -16,13 +19,13 @@ I was curious about how I could apply techniques from the field of [data mining]
 - How balanced are the "route pyramids" of most climbers? That is, do most people actually do a significant number of routes at a certain grade before progressing to the next?
 
 Here's the approach I took:
-- Getting the data: I wrote up a [Python](https://www.python.org/) script to gather the bios of climbers and their bouldering ascents, which are publicly available on 8a. An anonymized version is available - you should check it out!
-- What Shape are Climbers?: Box-and-whisker plots, histograms, and summary statistics are techniques to start to get a handle on the data. I broke climbers into three populations, based on what grades they climbed, and started to look at what patterns could be discerned in the bios of each population.
-- Let's do Some Significance Testing!: [Statistical hypothesis testing](https://www.wikipedia.com/en/Statistical_hypothesis_testing) allows us to use computational power to make conclusions about our datasets. I used the [Analysis of Variance (ANOVA)](https://en.wikipedia.org/wiki/Analysis_of_variance) technique to see how the mean heights, weights, and BMIs of each of the three populations (broken down by grade) differed.
+- [Getting the data](#getting-the-data): I wrote up a [Python](https://www.python.org/) script to gather the bios of climbers and their bouldering ascents, which are publicly available on 8a. An anonymized version is available - you should check it out!
+- [What Shape are Climbers?](#what-shape-are-climbers): Box-and-whisker plots, histograms, and summary statistics are techniques to start to get a handle on the data. I broke climbers into three populations, based on what grades they climbed, and started to look at what patterns could be discerned in the bios of each population.
+- [Let's do Some Significance Testing!](#lets-do-some-significance-testing): [Statistical hypothesis testing](https://www.wikipedia.com/en/Statistical_hypothesis_testing) allows us to use computational power to make conclusions about our datasets. I used the [Analysis of Variance (ANOVA)](https://en.wikipedia.org/wiki/Analysis_of_variance) technique to see how the mean heights, weights, and BMIs of each of the three populations (broken down by grade) differed.
 
 This is by no means meant to be exhaustive, or the final say; indeed, my hope is just to give a sample of what is possible and present the datasets to others. In the spirit of collaboration and reproducibility, I would love nothing more than for other people to dissect my results and be inspired by the dataset to answer questions of their own!
 
-# Getting the data:
+# Getting the data
 
 I thought you'd never ask! Right now the data is two CSV files, one for [users](https://s3.amazonaws.com/andrewlamb/8a/users.csv) and one for [boulders](https://s3.amazonaws.com/andrewlamb/8a/users.csv). The names of the users are removed.
 
