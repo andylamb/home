@@ -35,9 +35,9 @@ Climbers have long been interested in what sort of body can be dragged up the st
 
 ### Populations
 I considered three different populations:
-- All the climbers on 8a that listed both height and weight (these fields are optional on the bio). This group had 6358 climbers. Climbers shorter than 120cm (~3'11'') or taller than 245cm (~8') are discarded as measurement errors (i.e. likely trolling in their bios).
-- The subset of climbers that had at least 10 ascents 8a or harder. This group had 480 climbers.
-- The subset of climbers that had at least 10 ascents 8b or harder. This gropu had 97 climbers.
+- All the climbers on 8a that listed both height and weight (these fields are optional on the bio). This group had 5910 climbers. Climbers shorter than 120cm (~3'11'') or taller than 245cm (~8') are discarded as measurement errors (i.e. likely trolling in their bios).
+- The subset of climbers that had at least 10 ascents 8a or harder. This group had 455 climbers.
+- The subset of climbers that had at least 10 ascents 8b or harder. This gropu had 91 climbers.
 
 ### Plots and Descriptive Statistics
 
