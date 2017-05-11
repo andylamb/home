@@ -1,10 +1,14 @@
 ---
 layout: post
-title: Hmm, what should the title be...?
+title: The 8a Dataset, Part 1
 ---
 
 * TOC
 {:toc}
+
+# TL;DR
+
+I like data and climbing rocks. I wrote a quick script to crawl [8a.nu](https://www.8a.nu/) for the climbers' publicly available profiles and bouldering scorecards. Looking at the heights, weights, and BMIs was quite interesting: elite climbers have slightly lower BMIs and weights, while there was no statistically significant difference in heights. Anyone who finds this sort of thing interesting should dig into the data!
 
 # Introduction
 
@@ -41,7 +45,7 @@ I considered three different populations:
 
 ### Plots and Descriptive Statistics
 
-We'll use a couple different tools to get a high-level picture of the data. First, some basic descriptive statistics: the mean, median, 25th quartile and 75th quartile. [Histograms](https://youtu.be/4eLJGG2Ad30) group the data into bins, e.g. "climbers 162.5 and 165.5cm", and show how many data points fall into that bin. Finally, we now turn to our good friend from Intro. Statistics, the [box-and-whisker plot](https://youtu.be/b2C9I8HuCe4). The "box" ranges from the 25th percentile of the data to the 75th (we call the height of this box the "interquartile range"), with a lines for the median and mean. The "whiskers" show the lowest and highest datums within the 1.5 times the interquartile range of the 25th and 75th percentiles, respectively.
+We'll use a couple different tools to get a high-level picture of the data. First, some basic descriptive statistics: the mean, median, 25th quartile and 75th quartile. [Histograms](https://youtu.be/4eLJGG2Ad30) group the data into bins, e.g. "climbers from 162.5 to 165.5cm", and show how many data points fall into that bin. Finally, we now turn to our good friend from Intro. Statistics, the [box-and-whisker plot](https://youtu.be/b2C9I8HuCe4). The "box" ranges from the 25th percentile of the data to the 75th (we call the height of this box the "interquartile range"), with lines for the median and mean. The "whiskers" show the lowest and highest datums within the 1.5 times the interquartile range of the 25th and 75th percentiles, respectively.
 
 I used [Plot.ly](https://plot.ly/) to display the data, so it might take a few seconds to load from their servers. If you are having trouble seeing things, try clicking the "Autoscale" or "Reset axes" buttons.
 
