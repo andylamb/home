@@ -44,15 +44,9 @@ To get a high-level picture of the data, we now turn to our good friend from Int
 
 ## Height
 
-<div>
-    <a href="https://plot.ly/~andylamb/45/?share_key=Zxk4ewdjfgkuYvDiLLC2Jr" target="_blank" title="Heights Histogram" style="display: block; text-align: center;"><img src="https://plot.ly/~andylamb/45.png?share_key=Zxk4ewdjfgkuYvDiLLC2Jr" alt="Heights Histogram" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
-    <script data-plotly="andylamb:45" sharekey-plotly="Zxk4ewdjfgkuYvDiLLC2Jr" src="https://plot.ly/embed.js" async></script>
-</div>
+<iframe width="600" height="500" frameborder="0" scrolling="no" src="//plot.ly/~andylamb/45.embed?showlink=false"></iframe>
 
-<div>
-    <a href="https://plot.ly/~andylamb/71/?share_key=7EoAlr6Y2XzFHnG8NbmmpE" target="_blank" title="Heights" style="display: block; text-align: center;"><img src="https://plot.ly/~andylamb/71.png?share_key=7EoAlr6Y2XzFHnG8NbmmpE" alt="Heights" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
-    <script data-plotly="andylamb:71" sharekey-plotly="7EoAlr6Y2XzFHnG8NbmmpE" src="https://plot.ly/embed.js" async></script>
-</div>
+<iframe width="600" height="500" frameborder="0" scrolling="no" src="//plot.ly/~andylamb/71.embed?showlink=false"></iframe>
 
 <table>
   <thead>
@@ -101,15 +95,9 @@ Going off the plots and summary statistics, it seems like the height distributio
 
 ## Weight
 
-<div>
-    <a href="https://plot.ly/~andylamb/47/?share_key=WontCtu14MvpNNxKmhM7UD" target="_blank" title="Weights Histogram" style="display: block; text-align: center;"><img src="https://plot.ly/~andylamb/47.png?share_key=WontCtu14MvpNNxKmhM7UD" alt="Weights Histogram" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
-    <script data-plotly="andylamb:47" sharekey-plotly="WontCtu14MvpNNxKmhM7UD" src="https://plot.ly/embed.js" async></script>
-</div>
+<iframe width="600" height="500" frameborder="0" scrolling="no" src="//plot.ly/~andylamb/47.embed?showlink=false"></iframe>
 
-<div>
-    <a href="https://plot.ly/~andylamb/75/?share_key=KfYR0XXmkxc7KeKCQaSVBB" target="_blank" title="Weights" style="display: block; text-align: center;"><img src="https://plot.ly/~andylamb/75.png?share_key=KfYR0XXmkxc7KeKCQaSVBB" alt="Weights" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
-    <script data-plotly="andylamb:75" sharekey-plotly="KfYR0XXmkxc7KeKCQaSVBB" src="https://plot.ly/embed.js" async></script>
-</div>
+<iframe width="600" height="500" frameborder="0" scrolling="no" src="//plot.ly/~andylamb/75.embed?showlink=false"></iframe>
 
 <table>
   <thead>
@@ -156,15 +144,9 @@ The histogram can give us a little more information. If we look at the 57, 62, a
 
 ## BMI
 
-<div>
-    <a href="https://plot.ly/~andylamb/43/?share_key=iEOO7UeAtZ1MdpZJ3nY6Du" target="_blank" title="BMI Histogram" style="display: block; text-align: center;"><img src="https://plot.ly/~andylamb/43.png?share_key=iEOO7UeAtZ1MdpZJ3nY6Du" alt="BMI Histogram" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
-    <script data-plotly="andylamb:43" sharekey-plotly="iEOO7UeAtZ1MdpZJ3nY6Du" src="https://plot.ly/embed.js" async></script>
-</div>
+<iframe width="600" height="500" frameborder="0" scrolling="no" src="//plot.ly/~andylamb/43.embed?showlink=false"></iframe>
 
-<div>
-    <a href="https://plot.ly/~andylamb/69/?share_key=qOtl8VPos9Dcc4aHFcZWuU" target="_blank" title="BMIs" style="display: block; text-align: center;"><img src="https://plot.ly/~andylamb/69.png?share_key=qOtl8VPos9Dcc4aHFcZWuU" alt="BMIs" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
-    <script data-plotly="andylamb:69" sharekey-plotly="qOtl8VPos9Dcc4aHFcZWuU" src="https://plot.ly/embed.js" async></script>
-</div>
+<iframe width="600" height="500" frameborder="0" scrolling="no" src="//plot.ly/~andylamb/69.embed?showlink=false"></iframe>
 
 <table>
   <thead>
