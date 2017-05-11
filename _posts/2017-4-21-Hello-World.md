@@ -24,10 +24,7 @@ This is by no means meant to be exhaustive, or the final say; indeed, my hope is
 
 # Getting the data:
 
-I thought you'd never ask! Right now the data is two tables, one for users and one for boulders.
-- We're working with **BIG DATA** here, and I needed a petabyte scale data warehouse that was fault tolerant and offered network isolation. You can download a [SQLite](http://sqlite.org/index.html) dump of the data [here](https://github.com/andylamb/8a-data/raw/master/output.sql).
-- You can also get CSV files for the [users](https://github.com/andylamb/8a-data/raw/master/users.csv) and [boulders](https://github.com/andylamb/8a-data/raw/master/boulders.csv) tables.
-- See the [Jupyter notebook where I do all the analysis](https://github.com/andylamb/8a-data/blob/master/notebooks/Exploration.ipynb).
+I thought you'd never ask! Right now the data is two CSV files, one for [users](https://s3.amazonaws.com/andrewlamb/8a/users.csv) and one for [boulders](https://s3.amazonaws.com/andrewlamb/8a/users.csv). The names of the users are removed.
 
 # What Shape are Climbers?
 
