@@ -31,7 +31,7 @@ This is by no means meant to be exhaustive, or the final say; indeed, my hope is
 
 # Getting the data
 
-I thought you'd never ask! Right now the data is two CSV files, one for [users](https://s3.amazonaws.com/andrewlamb/8a/users.csv) and one for [boulders](https://s3.amazonaws.com/andrewlamb/8a/users.csv). The names of the users are removed.
+I thought you'd never ask! Right now the data is two CSV files, one for [users](https://s3.amazonaws.com/andrewlamb/8a/users.csv) and one for [boulders](https://s3.amazonaws.com/andrewlamb/8a/boulders.csv). The names of the users are removed.
 
 # What Shape are Climbers?
 
