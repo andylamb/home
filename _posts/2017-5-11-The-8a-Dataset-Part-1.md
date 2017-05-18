@@ -203,17 +203,107 @@ So overall, the three groups have pretty similar distributions of BMIs, with 8b 
 
 # Let's do Some Significance Testing!
 
-So far we've used box-and-whisker plots and histograms to get a feel for how the different populations look. But just staring at the plots, it's difficult to tell how different the populations are; here we look at a quantitative way to answer the question of whether all climbers, 8a climbers, and 8b climbers are really do have different heights, weights, and BMIs.
+So far we've used box-and-whisker plots, histograms, and summary statistics to get a feel for how the different populations look. But just staring at the plots and numbers, it's difficult to tell how different the populations are. We can use [statistical hypothesis testing](https://en.wikipedia.org/wiki/Statistical_hypothesis_testing) to answer the question of whether all climbers, 8a climbers, and 8b climbers are really do have different heights, weights, and BMIs.
 
-[Analysis of Variance (ANOVA)](https://en.wikipedia.org/wiki/Analysis_of_variance) tests whether the means of multiple groups are significantly different. Imagine there are some "true" distributions of heights (or weights or BMIs) out there for all climbers, 8a climbers, and 8b climbers, and the data we got from 8a are samples from these true distributions. Of course we can't observe these true distributions, only the samples, but we want to infer some knowledge about the true distributions, in this case their means. We can use ANOVA for this task: the input is the samples we got from 8a, and the test computes an F-value and [p-value](https://en.wikipedia.org/wiki/P-value). 
+Don't be intimidated if this hypothesis testing thing sounds intimidating. It's pretty easily demonstrated with a concrete example. Say we run an experiment where 100 rats are fed a diet of CLIF® Nut Butter Filled Energy Bars (Chocolate Hazelnut flavor) and 100 rats just get the normal rat food. Then we measure the time each rat takes to run through a maze, and want to know if the special diet made any difference. 
 
-The intuition for the F-value is that there is some variance between groups and within groups, and we are interested in the ratio of these variances (which is where the name "Analysis of Variance" comes from). Say we find that there is much more variance between groups than within groups; in this case, the F-value will be higher and it seems more likely that the groups are fundamentally distributed differently. On the other hand, if we find there is high variance within groups and not much variance between groups, than it is less likely the groups are actually distributed differently. Once we have the F-value, we can use the p-value as a way to formalize this intuition.
+Let's run a simple simulation of this experiment. In the simulation, the times are drawn from a random normal distribution with the same standard deviation, and the mean for the group with the special food is slightly lower. This means that the Nut Butter Filled Bars really are making a difference; but the key here is that we don't get to see the distributions the times are drawn from, we **only** get to see the 100 samples. From these samples, we need to figure out if the bars are making a difference.
 
-The p-value is the probability that if the [null hypothesis](https://en.wikipedia.org/wiki/Null_hypothesis) (in our case all three of the population means being equal) is true, we would observe the samples. If the p-value is less than a chosen significance level (0.05 is a common choice), we would say that the results are [statistically significant](https://en.wikipedia.org/wiki/Statistical_significance). For example, if the results for BMI are statistically significant, it means that our observed BMI data is unlikely if the means the true BMI distributions were all the same.
+To analyze our experiment, we'll use a [null hypothesis](https://en.wikipedia.org/wiki/Null_hypothesis) that the populations are the same and use a [t-test](https://en.wikipedia.org/wiki/Student%27s_t-test) to calculate a [p-value](https://en.wikipedia.org/wiki/P-value). That was a lot of terminology, but the idea is pretty simple! We've observed some data from our experiment, and we want to know if the times are due to random chance, or if the two groups really are different. For a second, assume that the bars make no difference, i.e. the distributions they are drawn from are exactly the same. This is the null hypothesis, and it is says that the variable we were experimenting with (the food) didn't have an effect. The p-value is the probability that if the null hypothesis is true (the groups are the same) we would observe the data. So if the p-value is low, it means that the timing data we observed is unlikely if the food is making no difference. If the p-value is below some threshold called [the significance level]() - 0.05 is a common choice - we say that the result is [statistically significant](https://en.wikipedia.org/wiki/Statistical_significance). OK, let's look at a really short Python script for this simulation!
 
-Stats is pretty fun stuff - let's get cracking on these tests!
+```python
+# Import numpy and scipy, common scientific computing packages.
+import numpy as np
+from scipy import stats
 
-## ANOVA
+# We use a random seed so the same data is always 
+# generated - don't worry about this too much.
+np.random.seed(13)
+
+# Generate data for the group with the bars and the group with
+# the normal food. The group with the bars has a mean time of 5.5s
+# and the other group has a mean time of 6.0s
+bar_group = np.random.normal(5.5, 1.0, 100)
+control_group = np.random.normal(6.0, 1.0, 100)
+
+# Print statistics about our data.
+print """
+The bar group has mean {:.3f} and std {:.3f}.
+The control group has mean {:.3f} and std {:.3f}.
+""".format(
+    bar_group.mean(), bar_group.std(), 
+    control_group.mean(), control_group.std()
+)
+
+# Here is the fun part! We use a t-test to calculate the p-value,
+# i.e. the probability that if the means in both groups were the 
+# same, we would observe our data.
+t, prob = stats.ttest_ind(bar_group, control_group)
+
+print """
+Ran t-test. The p-value is {:.3f}
+""".format(prob)
+```
+
+This generates the output
+```
+The bar group has mean 5.558 and std 0.932.
+The control group has mean 5.854 and std 0.809.
+
+Ran t-test. The p-value is 0.018
+```
+Let's go over what happened. First we generated 100 random samples from the group that ate the bars (`bar_group = np.random.normal(5.5, 1.0, 100)`) and the group that ate the normal food (`control_group = np.random.normal(6.0, 1.0, 100)`). The sample mean of the bar group (5.558) was lower than the sample mean of the control group (5.854) - this is what we'd expect, because the population mean for the bar group (5.5) is lower than the population mean for the control group (6.0). But it is **crucial** that we put ourselves in the mindset of scientists that only observe the values of `bar_group` and `control_group`! 
+
+We pose the null hypothesis that the population means are the same, and use a t-test to find the probability of observing these data if the null hypothesis is in fact true (`stats.ttest_ind(bar_group, control_group)`). We calculate a p-value of 0.018, so this probability is in fact quite low. If we chose a significance level of 0.05 (a common choice), we could reject our null hypothesis, and make the statement that we believe the population means are in fact different.
+
+I hope this quick example was helpful! If you're still a bit lost or want to dive deeper into the statistical machinery we're using there are a lot of resources out there; I found that **TODO: Insert link.** [this]() video was a great place to start.
+
+## But There are More Than Two Groups...?
+
+An astute reader would point out that in our data there are three groups (all climbers, 8a climbers, and 8b climbers), but in my rat simulation there were only two groups. The test we used (`stats.ttest_ind`) only works for two groups, so what should we do? I decided to use [Analysis of Variance (ANOVA)](https://en.wikipedia.org/wiki/Analysis_of_variance), which is similar to the t-test we just used, but works for more than two groups. So in this case, we assume the null hypothesis is that the population means of all of the groups are the same. 
+
+For full clarity, let's do one more simulation. Say that we want to see if the type of nut butter has an affect on the rats. We'll try out Chocolate Hazelnut, Peanut, and Coconut Almond, feeding each flavor to 100 rats. Continuing the code from above:
+```python
+# Generate data for the three different groups. All
+# groups have the same mean time.
+hazelnut_group = np.random.normal(5.5, 1.0, 100)
+peanut_group = np.random.normal(5.5, 1.0, 100)
+almond_group = np.random.normal(5.5, 1.0, 100)
+
+# Print statistics about our data.
+print """
+The Chocolate Hazelnut group has mean {:.3f} and std {:.3f}.
+The Peanut group has mean {:.3f} and std {:.3f}.
+The Coconut Almond group has mean {:.3f} and std {:.3f}.
+""".format(
+    hazelnut_group.mean(), hazelnut_group.std(),
+    peanut_group.mean(), peanut_group.std(),
+    almond_group.mean(), almond_group.std(),
+)
+
+# Here we use ANOVA, which can take in more than two groups.
+f, prob = stats.f_oneway(hazelnut_group, peanut_group, almond_group)
+
+print """
+Ran ANOVA. The p-value is {:.3f}
+""".format(prob)
+```
+
+And the output is
+```
+The Chocolate Hazelnut group has mean 5.447 and std 1.058.
+The Peanut group has mean 5.551 and std 0.944.
+The Coconut Almond group has mean 5.417 and std 0.921.
+
+Ran ANOVA. The p-value is 0.596
+```
+
+Here we see that the p-value is much larger than before. If we assume that the data for each group is drawn from a distributions with the same population mean (again, **only we** know that this is true, if we actually ran this experiment we would only see the data), the probability of seeing the data is 0.596. So we can not reject the null hypothesis: there is no evidence that flavor has an effect on the time it takes to complete the maze.
+
+If you want to learn more about ANOVA, I would check out **TODO: Fix link** (this)[] link
+Stats is pretty fun stuff - let's get cracking on the real data!
+
+## ANOVA Results
 
 <table>
   <thead>
@@ -265,3 +355,11 @@ As seen from the box-and-whisker plots, there are a number of "measurement error
 ## What's Next?
 
 This analysis is just a start, and in the spirit of scientific advancement I'd love for other people to dissect my methods and figure out new ways to use this data to advance our collective climbing knowledge! I wanted to understand a rough relationship between body composition and bouldering achievement, and it seems that there is a relatively small correlation for weight and BMI. The data can be a bit messy, which is all the more reason for more inquiring minds to delve in. As Linus Tovalds, creator of the Linux operating system, said, "Given enough eyeballs, all bugs are shallow". I'm excited to see what you find!
+
+# Appendix: Why is it called Analysis of Variance?
+
+When we run ANOVA, we calculate a statistic called the f-value (which is why the function is called `stats.f_oneway`). The intuition for the F-value is that there is some variance between groups and within groups, and we are interested in the ratio of these variances (which is where the name "Analysis of Variance" comes from). Say we find that there is much more variance between groups than within groups; in this case, the F-value will be higher and it seems more likely that the groups are fundamentally distributed differently. On the other hand, if we find there is high variance within groups and not much variance between groups, than it is less likely the groups are actually distributed differently. Once we have the F-value, we can use the p-value as a way to formalize this intuition.
+
+<!-- # Appendix: Why is it called Student's t-test? -->
+
+
