@@ -316,12 +316,6 @@ Stats is pretty fun stuff - let's get cracking on the real data!
   </thead>
   <tbody>
     <tr>
-      <td>F-value</td>
-      <td>0.637715</td>
-      <td>5.615863</td>
-      <td>6.507667</td>
-    </tr>
-    <tr>
       <td>p-value</td>
       <td>0.52853</td>
       <td>0.003656</td>
