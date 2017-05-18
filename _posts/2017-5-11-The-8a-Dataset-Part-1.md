@@ -51,9 +51,9 @@ I used [Plot.ly](https://plot.ly/) to display the data, so it might take a few s
 
 ## Height
 
-<iframe width="600" height="500" frameborder="0" scrolling="no" src="//plot.ly/~andylamb/45.embed?showlink=false"></iframe>
+<iframe width="800" height="550" frameborder="0" scrolling="no" src="//plot.ly/~andylamb/45.embed?showlink=false"></iframe>
 
-<iframe width="600" height="500" frameborder="0" scrolling="no" src="//plot.ly/~andylamb/71.embed?showlink=false"></iframe>
+<iframe width="800" height="550" frameborder="0" scrolling="no" src="//plot.ly/~andylamb/71.embed?showlink=false"></iframe>
 
 <table>
   <thead>
@@ -102,9 +102,9 @@ Going off the plots and summary statistics, it seems like the height distributio
 
 ## Weight
 
-<iframe width="600" height="500" frameborder="0" scrolling="no" src="//plot.ly/~andylamb/47.embed?showlink=false"></iframe>
+<iframe width="800" height="550" frameborder="0" scrolling="no" src="//plot.ly/~andylamb/47.embed?showlink=false"></iframe>
 
-<iframe width="600" height="500" frameborder="0" scrolling="no" src="//plot.ly/~andylamb/75.embed?showlink=false"></iframe>
+<iframe width="800" height="550" frameborder="0" scrolling="no" src="//plot.ly/~andylamb/75.embed?showlink=false"></iframe>
 
 <table>
   <thead>
@@ -151,9 +151,9 @@ The histogram can give us a little more information. If we look at the 57, 62, a
 
 ## BMI
 
-<iframe width="600" height="500" frameborder="0" scrolling="no" src="//plot.ly/~andylamb/43.embed?showlink=false"></iframe>
+<iframe width="800" height="550" frameborder="0" scrolling="no" src="//plot.ly/~andylamb/43.embed?showlink=false"></iframe>
 
-<iframe width="600" height="500" frameborder="0" scrolling="no" src="//plot.ly/~andylamb/69.embed?showlink=false"></iframe>
+<iframe width="800" height="550" frameborder="0" scrolling="no" src="//plot.ly/~andylamb/69.embed?showlink=false"></iframe>
 
 <table>
   <thead>
