@@ -256,7 +256,7 @@ Let's go over what happened. First we generated 100 random samples from the grou
 
 We pose the null hypothesis that the population means are the same, and use a t-test to find the probability of observing these data if the null hypothesis is in fact true (`stats.ttest_ind(bar_group, control_group)`). We calculate a p-value of 0.018, so this probability is in fact quite low. If we chose a significance level of 0.05 (a common choice), we could reject our null hypothesis, and make the statement that we believe the population means are in fact different.
 
-I hope this quick example was helpful! If you're still a bit lost or want to dive deeper into the statistical machinery we're using there are a lot of resources out there; I found that **TODO: Insert link.** [this]() video was a great place to start.
+I hope this quick example was helpful! If you're still a bit lost or want to dive deeper into the statistical machinery we're using there are a lot of resources out there; I found that [this](https://youtu.be/-FtlH4svqx4) video was a great place to start.
 
 ## But There are More Than Two Groups...?
 
@@ -300,8 +300,7 @@ Ran ANOVA. The p-value is 0.596
 
 Here we see that the p-value is much larger than before. If we assume that the data for each group is drawn from a distributions with the same population mean (again, **only we** know that this is true, if we actually ran this experiment we would only see the data), the probability of seeing the data is 0.596. So we can not reject the null hypothesis: there is no evidence that flavor has an effect on the time it takes to complete the maze.
 
-If you want to learn more about ANOVA, I would check out **TODO: Fix link** (this)[] link
-Stats is pretty fun stuff - let's get cracking on the real data!
+If you want to learn more about ANOVA, I would check out (these videos)[https://www.khanacademy.org/math/statistics-probability/analysis-of-variance-anova-library]. Stats is pretty fun stuff - let's get cracking on the real data!
 
 ## ANOVA Results
 
