@@ -31,7 +31,9 @@ This is by no means meant to be exhaustive, or the final say; indeed, my hope is
 
 # Getting the data
 
-I thought you'd never ask! Right now the data is two CSV files, one for [users](https://s3.amazonaws.com/andrewlamb/8a/users.csv) and one for [boulders](https://s3.amazonaws.com/andrewlamb/8a/boulders.csv). The names of the users are removed. The users file has all other fields available on an 8a profile, including height, weight, country, city, DOB, when they started climbing, occupation, other interests, best comp results, favorite climbing areas, where they can guide, sponsors, visits to their profile, and 8a scores and rankings. The boulders file has names, grades, dates, type of ascent (flash, onsight, redpoint), whether it is recommended, area, tags (e.g. "soft"), comments, and stars. **You should download them and play with them yourself!**.
+I thought you'd never ask! Right now the data is two CSV files, one for [users](https://s3.amazonaws.com/andrewlamb/8a/users.csv) and one for [boulders](https://s3.amazonaws.com/andrewlamb/8a/boulders.csv). 
+
+The names of the users are removed. The users file has all other fields available on an 8a profile, including height, weight, country, city, DOB, when they started climbing, occupation, other interests, best comp results, favorite climbing areas, where they can guide, sponsors, visits to their profile, and 8a scores and rankings. The boulders file has names, grades, dates, type of ascent (flash, onsight, redpoint), whether it is recommended, area, tags (e.g. "soft"), comments, and stars. **You should download them and play with them yourself!**.
 
 # What Shape are Climbers?
 
