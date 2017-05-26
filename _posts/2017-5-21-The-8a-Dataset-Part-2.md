@@ -16,7 +16,7 @@ In this post we'll ask a different question: Where do the best climbers live? Ci
 
 # Split up the Climbers
 
-This is similar to the split I used for the height and weight analysis, dividing into three groups based on how grade. Note that because location (and height and weight) are optional, these groups are *not* the same as before.
+This is similar to the split I used for the height and weight analysis, dividing into three groups based on grade. Note that because location (and height and weight) are optional, these groups are *not* the same as before.
 - All the climbers on 8a that listed a valid city (whether it could be geocoded) and climbed fewer than 10 ascents 8a or harder. This group had 8626 climbers. I call this "All Climbers".
 - The set of climbers that had at least 10 ascents 8a or harder. This group had 615 climbers. I call this "8a Climbers".
 - The set of climbers that had at least 10 ascents 8b or harder. This group had 109 climbers. I call this "8b Climbers"
