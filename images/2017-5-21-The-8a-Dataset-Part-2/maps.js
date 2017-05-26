@@ -5,8 +5,8 @@ var coords_8b = [{"latitude": 40.0149856, "city": "Boulder", "longitude": -105.2
 var map;
 function initMap() {
 	map = new google.maps.Map(document.getElementById('all_map'), {
-	  zoom: 2,
-	  center: {lat: -33.865427, lng: 151.196123},
+	  zoom: 1,
+	  center: {lat: 0, lng: 151.196123},
 	  mapTypeId: 'terrain'
 	});
 
@@ -33,9 +33,9 @@ function initMap() {
 
 var map8a;
 function initMap8a() {
-	map8a = new google.maps.Map(document.getElementById('map_8a'), {
-	  zoom: 2,
-	  center: {lat: -33.865427, lng: 151.196123},
+	map8a = new google.maps.Map(document.getElementById('8a_map'), {
+	  zoom: 1,
+	  center: {lat: 0, lng: 151.196123},
 	  mapTypeId: 'terrain'
 	});
 
@@ -62,9 +62,9 @@ function initMap8a() {
 
 var map8b;
 function initMap8b() {
-	map8b = new google.maps.Map(document.getElementById('map_8b'), {
-	  zoom: 2,
-	  center: {lat: -33.865427, lng: 151.196123},
+	map8b = new google.maps.Map(document.getElementById('8b_map'), {
+	  zoom: 1,
+	  center: {lat: 0, lng: 151.196123},
 	  mapTypeId: 'terrain'
 	});
 
@@ -88,3 +88,41 @@ function initMap8b() {
 	  map: map8b
 	});
 }
+
+function initAllMaps() {
+	initMap();
+	initMap8a();
+	initMap8b();
+}
+
+$('#us_zoom').click(function(){
+	map.setZoom(5);
+	map.setCenter({lat: 36.137874718407666, lng: 264.7508104999999});
+	return false;
+});
+
+$('#co_ut_zoom').click(function(){
+	map.setZoom(7);
+	map.setCenter({lat: 40.56389453066545, lng: -108.54264653125013});
+	return false;
+});
+
+$('#europe_zoom').click(function(){
+	map.setZoom(6);
+	map8a.setZoom(6);
+	map8b.setZoom(6);
+	map.setCenter({lat: 47.10378387099161, lng: 10.702958937499973});
+	map8a.setCenter({lat: 47.10378387099161, lng: 10.702958937499973});
+	map8b.setCenter({lat: 47.10378387099161, lng: 10.702958937499973});
+	return false;
+});
+
+$('#central_europe_zoom').click(function(){
+	map.setZoom(7);
+	map8a.setZoom(7);
+	map8b.setZoom(7);
+	map.setCenter({lat: 47.10378387099161, lng: 10.702958937499973});
+	map8a.setCenter({lat: 47.10378387099161, lng: 10.702958937499973});
+	map8b.setCenter({lat: 47.10378387099161, lng: 10.702958937499973});
+	return false;
+});

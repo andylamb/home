@@ -34,6 +34,14 @@ Heatmaps are a technique for visualizing spacial data. The intensity of the colo
 
 ## All Climbers
 
+Ok, I'll tell you a bit about what I see here, mainly to explain how the visualization works. When the page loads, the map should be zoomed all the way out, so the entire world is visible. You'll see three red "hot" spots, on the United States, Europe, and Brazil. There are some lighter yellow-green spots on South Africa, Japan, and Australia. 
+
+If we zoom in, the map will show the distributions at a more detailed level. For example, we can <a id="us_zoom">zoom in on the US</a> and you should now see that the red blob divides into three different blobs, one on the western US, one on the eastern US, and one over Texas. Let's zoom in even further, and <a id="co_ut_zoom">focus on Colorado and Utah.</a> Now we can see that there are hot spots centered on the Salt Lake City and Denver areas, which matches our intuition that there are a lot of climbers living in those cities. 
+
+I was also interested in how the heatmaps differed for the the different populations. For example, let's <a id="europe_zoom">zoom all three maps in on Europe.</a> The top two maps ("all climbers" and "8a climbers") look pretty similar, but the "8b climbers" map is more concentrated around Switzerland, Austria, and Germany. <a id="central_europe_zoom">Zooming in even further</a>, all three maps look pretty different: the maps get more concentrated as the populations get smaller, and the "8b climbers" are pretty focused around the border of Switzerland, France, and Italy.
+
+Hopefully that made it clear how the map works, go ahead and explore!
+
 <div id="all_map" class="map"></div>
 
 ## 8a Climbers
@@ -44,22 +52,16 @@ Heatmaps are a technique for visualizing spacial data. The intensity of the colo
 
 <div id="8b_map" class="map"></div>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 <script src="../images/2017-5-21-The-8a-Dataset-Part-2/maps.js"></script>
 
 <script async defer
-src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvoTAgNb8OKEj6v9NIfBNTQkBl5LywU7o&libraries=visualization&callback=initMap">
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvoTAgNb8OKEj6v9NIfBNTQkBl5LywU7o&libraries=visualization&callback=initAllMaps">
 </script>
 
-<script async defer
-src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvoTAgNb8OKEj6v9NIfBNTQkBl5LywU7o&libraries=visualization&callback=initMap8a">
-</script>
-
-<script async defer
-src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvoTAgNb8OKEj6v9NIfBNTQkBl5LywU7o&libraries=visualization&callback=initMap8b">
-</script>
-
-# Appendix: Technical Details
+<!-- # Appendix: Technical Details
 
 ## Geocoding API
 
-## Heatmap API
+## Heatmap API -->
