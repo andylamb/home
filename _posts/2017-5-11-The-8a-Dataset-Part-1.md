@@ -344,6 +344,12 @@ The dataset I got from 8a can be a bit messy. Here I go through a few things I n
 
 8a only allows climbers to log their weights in discrete intervals, e.g. 71 - 75kg. For height, climbers are allowed to input any number in cm.
 
+### Bios Are Likely Not Updated
+
+Climbers likely fill out their statistics (height and weight) once at the time of account creation, but don't update them frequently. This means that the climbers may not be their listed size at the time they finish routes. For example, if a climber started climbing 8a after growing two inches, this would not be reflected in the dataset.
+
+Note: Thanks to Bennoit Cerrina for this insight. He pointed out that my own listed weight was 48kg, because I was much younger when I created my account.
+
 ### Outliers
 
 As seen from the box-and-whisker plots, there are a number of "measurement errors", or accounts that do not input a correct height and weight. We attempted to clean these from our analysis; for example, requiring that the "All Climbers" group had logged at least 10 climbs seemed to help reduce the number of bogus accounts. However, there is definitely potential to figure out more ways to clean up the data.
